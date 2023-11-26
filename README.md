@@ -14,7 +14,7 @@ Development on this project has stopped.
 
 ## Description
 
-We predict housing prices based on features derived from the Ames, Iowa housing data set, containing residential property sales from 2006 - 2010.
+We predict housing prices based on features derived from the Ames, Iowa housing data set, containing residential property sales from 2006 - 2010. `exploratory_data_analysis.ipynb` contains multiple plots displaying the data and the very first neural network. Subsequent neural network models are contained in the `./trial_models/` folder.
 
 ## Usage
 
@@ -38,4 +38,4 @@ Thanks to Geronimo Perez for feedback and assistance
 
 ## Authors
 
-Moussa Diop, Abdullah Jaura, Bryan Johns, Bolima Tafwa, November, 2023
+Moussa Diop, Abdullah Jaura, Bryan Johns, Bolima Tafah, November, 2023
