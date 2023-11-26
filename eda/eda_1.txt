@@ -1,0 +1,58 @@
+What's gonna impact the house price? What are the features?
+
+Property Size (lot size, living area)
+    LotArea
+    ***GrLivArea
+    GarageArea
+    include basement sf? see under Hm.....
+
+***Location, location, location (nearby amenities)
+    Neighborhood
+    Condition1
+    Condition2
+
+Number of rooms (esp. bath and bed)
+    BsmtFullBath
+    BsmtHalfBath
+    FullBath
+    HalfBath
+    Bedrooms
+    Kitchen?
+    KitchenQual
+    TotRmsAbvGrd
+    
+Age of property
+    ***YearBuilt
+    YearRemodAdd
+
+Condition of property
+    ***OverallQual
+    ***OverallCond
+    ExterQual
+    ExterCond
+    Functional
+    GarageCond
+    SaleCondition
+    BldgType?
+    HouseStyle?
+
+Construction materials
+    Exterior1st
+    Exterior2nd
+
+Hmmmm.....
+    MSSubClass
+    MSZoning
+    BsmtFinSF1 / BsmtFinType1
+    BsmtFinSF2 / BsmtFinType2
+    TotalBsmtSF - BsmtUnfSF
+    Heating / HeatingQC
+    CentralAir
+    MoSold / YrSold
+    Fireplaces / FireplaceQu
+    WoodDeckSF / OpenPorchSF / EnclosedPorch / 3SsnPorch / ScreenPorch
+    PoolArea / PoolQC
+
+
+Data preprocessing
+    Outliers? - Histogram
