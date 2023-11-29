@@ -1,3 +1,6 @@
+# hide test folder for repo readability
+untitled_project/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

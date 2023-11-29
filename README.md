@@ -14,11 +14,16 @@ Development on this project has stopped.
 
 ## Description
 
-We predict housing prices based on features derived from the Ames, Iowa housing data set, containing residential property sales from 2006 - 2010. `exploratory_data_analysis.ipynb` contains multiple plots displaying the data and the very first neural network. Subsequent neural network models are contained in the `./trial_models/` folder.
+We predict housing prices based on features derived from the Ames, Iowa housing data set, containing residential property sales from 2006 - 2010. Two different machine learning models are used, a neural network and a random forest.
+
+`regression_models.ipynb` contains the final models.
+
+
+`exploratory_data_analysis.ipynb` contains multiple plots displaying the data and the very first neural network. Subsequent neural network models are contained in the `./trial_models/` folder. `nn_template.ipynb` shows the keras tuner used to adjust hyperparameters during those trials.
 
 ## Usage
 
-Run the thing.
+Restart the kernel and run `regression_models.ipynb`
 
 ## Gallery
 
