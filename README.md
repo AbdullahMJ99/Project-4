@@ -94,9 +94,13 @@ Random Forest Actual vs. Predicted Sale Price:
 
 ![Random Forest Actual vs. Predicted Sale Price](/images/rf_scatter.png)
 
+**Economic Implication**: The diagram shows that actual and predicted prices are positively correlated or better still have a direct relationship. This implies that any discrepances between the prices under measure might imply market inefficiencies or could indicate potential errors in our model.
+
 Random Forest Residuals:
 
 ![Plot of Random Forest Residuals](/images/rf_residuals.png)
+
+**Economic Implication**: If the model did not provide a particular pattern, this implies our model did a great job accounting for systematic errors, which gives our results some validity. Random distribution around zero indicates the models capture most economic factors impacting sale prices.
 
 ## References
 
