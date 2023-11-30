@@ -149,7 +149,7 @@ The random forest model, while less intricate, presented a robust alternative, s
 
 Moreover, the random forest model sheds light on the significance of various features, thereby amplifying our understanding of how these features influence the sale price.
 
-![Plot of Random Forest Feature Importance](/images/rf_features.png)
+![Plot of Random Forest Feature Importance](/images/rf_features_2.png)
 
 *Figure 11 - Random Forest Feature Importance*: This plot provides a visual representation of the significance of different features in the final random forest model. This analysis reveals the importance of each feature in influencing the model's predictions, highlighting a distinctive advantage not present in the neural network model.
 <br> 
