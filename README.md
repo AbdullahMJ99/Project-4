@@ -57,7 +57,7 @@ Restart the kernel and run `regression_models.ipynb`.
 
 Sample Neural Network Evaluation Metrics:
 
-![Sample Neural Network Evaluation Metrics](/images/nn_results.png)
+![Sample Neural Network Evaluation Metrics](/images/nn_residuals_hist.png)
 
 Neural Network Actual vs. Predicted Sale Price:
 
@@ -75,7 +75,7 @@ Neural Network Residuals:
 
 Sample Random Forest Evaluation Metrics:
 
-![Sample Random Forest Evaluation Metrics](/images/rf_results.png)
+![Sample Random Forest Evaluation Metrics](/images/rf_residuals_hist.png)
 
 Random Forest Actual vs. Predicted Sale Price:
 
