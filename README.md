@@ -58,19 +58,20 @@ Restart the kernel and run `regression_models.ipynb`.
 Sample Neural Network Evaluation Metrics:
 
 ![Sample Neural Network Evaluation Metrics](/images/nn_residuals_hist.png)
-
+**Economic Implication For Histogram**: The diagram above highlights market segmentation, showing the number of properties that fall within certain peice ranges. We can see that a good number of the houses fall within lower price ranges. Then reduce in number as they move away from the centermost point.
 Neural Network Actual vs. Predicted Sale Price:
 
 ![Neural Network Actual vs. Predicted Sale Price](/images/nn_scatter.png)
+**Economic Implication**: The diagram shows that actual and predicted prices are positively correlated or better still have a direct relationship. This implies that any discrepances between the prices under measure might imply market inefficiencies or could indicate potential errors in our model.
 
 Neural Network Training and Validation Loss:
 
 ![Neural Network Training and Validation Loss](/images/nn_loss.png)
-
+**Economic Implication**: A decreasing trend in both training and validation loss indicates the model learns and generalizes well
 Neural Network Residuals:
 
 ![Neural Network Residuals](/images/nn_residuals.png)
-
+**Economic Implication**: If the model did not provide a particular pattern, this implies our model did a great job accounting for systematic errors, which gives our results some validity. Random distribution around zero indicates the models capture most economic factors impacting sale prices.
 ### Random Forest
 
 Sample Random Forest Evaluation Metrics:
