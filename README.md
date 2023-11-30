@@ -1,6 +1,8 @@
-# Project-4 - Predicting Residential Real Estate Prices Using a Neural Network and a Random Forest
+# Project-4 - Insights into Housing Prices: Neural Network vs. Random Forest Analysis
 
 Development on this project has stopped.
+
+Refer to `predictive_models_report.md` for insight and analysis.
 
 ## Table of Contents
 
@@ -14,19 +16,27 @@ Development on this project has stopped.
 
 ## Description
 
-We predict housing prices based on features derived from the Ames, Iowa housing data set, containing residential property sales from 2006 - 2010. Two different machine learning models are used, a neural network and a random forest.
+This project employs the classic Ames, Iowa housing dataset to predict individual residential property prices using two distinct machine learning models. The experiment involves improving a neural network through feature engineering and hyperparameter tuning, alongside the construction of a random forest model for comparative analysis. The subsequent discussion delves into the strengths and weaknesses of each model, offering insights into their unique attributes and trade-offs.
 
-`regression_models.ipynb` contains the final models.
-
-`exploratory_data_analysis.ipynb` contains multiple plots displaying the data and the very first neural network. 
-
-Documentation of the trial models is contained in `House Prices Spreadsheet.xlsx`. `nn_template.ipynb` shows the keras tuner used to adjust hyperparameters during those trials. Subsequent neural network models are contained in the `./trial_models/` folder.
+Refer to `predictive_models_report.md` for insight and analysis.
 
 ## Usage
 
-Restart the kernel and run `regression_models.ipynb`
+Restart the kernel and run `regression_models.ipynb` to output the results of both a neural network and a random forest model.
+
+---
+
+Details of repo structure:
+
+- `regression_models.ipynb` contains the final models, built after all trials
+- `exploratory_data_analysis.ipynb` displays multiple plots guiding feature engineering, data cleaning, and processing
+- `House Prices Spreadsheet.xlsx` documents trial models
+- `/trial_models/` contains subsequent neural network and random forest models 
+- `nn_template.ipynb` demonstrates the keras tuner used for hyperparameter tuning 
 
 ## Gallery of Results
+
+Note how closely both model predictions perform.
 
 Sample Neural Network Evaluation Metrics:
 
