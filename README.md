@@ -1,4 +1,4 @@
-# Project-4 Ames Indiana Real Estate Machine Learning Prediction
+# Project-4 - Predicting Real Estate Prices Using a Neural Network and a Random Forest
 
 Development on this project has stopped.
 
@@ -17,7 +17,6 @@ Development on this project has stopped.
 We predict housing prices based on features derived from the Ames, Iowa housing data set, containing residential property sales from 2006 - 2010. Two different machine learning models are used, a neural network and a random forest.
 
 `regression_models.ipynb` contains the final models.
-
 
 `exploratory_data_analysis.ipynb` contains multiple plots displaying the data and the very first neural network. Subsequent neural network models are contained in the `./trial_models/` folder. `nn_template.ipynb` shows the keras tuner used to adjust hyperparameters during those trials.
 
