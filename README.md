@@ -72,7 +72,7 @@ Neural Network Actual vs. Predicted Sale Price:
 
 ![Plot of Neural Network Actual vs. Predicted Sale Price](/images/nn_scatter.png)
 
-**Economic Implication**: The diagram shows that actual and predicted prices are positively correlated or better still have a direct relationship. This implies that any discrepances between the prices under measure might imply market inefficiencies or could indicate potential errors in our model.
+**Economic Implication**: The diagram shows that actual and predicted prices are positively correlated or better still have a direct relationship. This implies that any discrepancies between the prices under measure might imply market inefficiencies or could indicate potential errors in our model.
 
 Neural Network Training and Validation Loss:
 
@@ -94,7 +94,7 @@ Random Forest Actual vs. Predicted Sale Price:
 
 ![Random Forest Actual vs. Predicted Sale Price](/images/rf_scatter.png)
 
-**Economic Implication**: The diagram shows that actual and predicted prices are positively correlated or better still have a direct relationship. This implies that any discrepances between the prices under measure might imply market inefficiencies or could indicate potential errors in our model.
+**Economic Implication**: The diagram shows that actual and predicted prices are positively correlated or better still have a direct relationship. This implies that any discrepancies between the prices under measure might imply market inefficiencies or could indicate potential errors in our model.
 
 Random Forest Residuals:
 

@@ -29,17 +29,25 @@ The intentionally blurred labels in this initial correlation heatmap underscore 
 
 ![Correlation heatmap](/images/correlation_heatmap_initial.png)
 
+*Figure 1 - Correlation Heatmap*: This heatmap provides an initial exploration of potential correlations between different features in the dataset.
+
 A histogram of the target variable, SalePrice, revealed a fairly normal distribution with a long tail, suggesting potential outliers, later addressed in our data processing.
 
 ![Histogram of Sale Price](/images/eda_sale_price_hist.png).
 
-Specific attention was given to indoor living area and indicated promising patterns.
+*Figure 2 - Histogram of Sale Price*: The histogram highlights the distribution of sale prices in the dataset.
+
+Specific attention was given to indoor living square footage and indicated promising patterns.
 
 ![Scatter plot of Total Indoor Living Area](/images/eda_sale_price_GrLivArea_BsmtFinSF.png)
+
+*Figure 3 - Scatter Plot of Indoor Square Footage*: This scatter plot illustrates the relationship between indoor square footage and sale prices.
 
 Challenges emerged when using 'Neighborhood' as a proxy for location. Thirteen of the 28 categories had fewer than 50 values, including categories with 11, 9, and 2 instances.
 
 ![Neighborhood bar chart](/images/eda_neighborhood_bar.png)
+
+*Figure 4 - Average Neighborhood Sale Price Analysis*: This bar chart explores average sale prices across different neighborhoods, annotated with data point counts.
 
 Investigation into sale conditions revealed 259 values not categorized as 'Normal'. Sale conditions covered a spectrum from trade and foreclosures to short sales, transactions between family members, and houses not completed when last assessed, typically associated with new constructions.
 
@@ -48,6 +56,8 @@ Visualizing both discrete and continuous data through histograms and scatter plo
 Nominal and ordinal data were examined using bar plots to guide future feature engineering and potential outlier identification, such as a single property lacking sewer and water utilities. Ordinal values related to quality exhibited promise for further analysis.
 
 ![Numerical and Categorical Data](/images/eda_numerical_catergorical.png)
+
+*Figure 5 - Sample Visualization of Available Data*: This visualization provides a snapshot of the dataset, displaying both numerical and categorical data.
 
 This meticulous data analysis provided crucial insights into feature selection and potential relationships between variables and sale prices, laying a solid foundation for subsequent modeling.
 
@@ -71,6 +81,8 @@ Multiple iterations were conducted, documented in `/trial_models/` and detailed 
 
 ![BlueSte outlier](/images/BlueSte_after_scaling.png)
 
+*Figure 6 - Post-Normalization BlueStem Neighborhood Outlier*: This image illustrates the impact of normalization in revealing a neighborhood outlier.
+
 All non-'Normal' Sale Condition values were excluded from analysis.
 
  The hyperparameter space for the neural network, including layers, neurons, and activation features, underwent systematic manipulation. Various columns, including promising correlated features such as garage area and the presence of a fireplace, were added and dropped in pursuit of optimal model configuration. Diverse feature engineering attempts were made, generating new values for total living square footage, room count, and even kitchen quality. To evaluate the impact of location, rare neighborhood values were binned.
@@ -89,17 +101,22 @@ Sample Neural Network Evaluation Metrics:
 
 ![Image of Sample Neural Network Evaluation Metrics](/images/nn_results.png)
 
-Neural Network Actual vs. Predicted Sale Price:
 
 ![Plot of Neural Network Actual vs. Predicted Sale Price](/images/nn_scatter.png)
+
+*Figure 7 - Scatter Plot of Neural Network Actual vs Predicted Sale Price*: The diagram shows that actual and predicted prices are positively correlated or better still have a direct relationship. This implies that any discrepancies between the prices under measure might imply market inefficiencies or could indicate potential errors in our model.
 
 Neural Network Training and Validation Loss:
 
 ![Plot of Neural Network Training and Validation Loss](/images/nn_loss.png)
 
+*Figure 8 - Neural Network Training and Validation Loss*: A decreasing trend in both training and validation loss indicates the model learns and generalizes well.
+
 Neural Network Scatter Plot of Residuals:
 
 ![Plot of Neural Network Residuals](/images/nn_residuals.png)
+
+*Figure 9 - Neural Network Scatter Plot of Residuals*: If the model did not provide a particular pattern, this implies our model did a great job accounting for systematic errors, which gives our results some validity. Random distribution around zero indicates the models capture most economic factors impacting sale prices.
 
 The random forest model, while less intricate, presented a robust alternative, showcasing notable performance without any hyperparameter tuning, providing a valuable benchmark for comparison.
 
@@ -109,11 +126,15 @@ Sample of Random Forest Actual vs. Predicted Sale Price:
 
 ![Plot of Random Forest Actual vs. Predicted Sale Price](/images/rf_scatter.png)
 
+*Figure 10 - Scatter Plot of Random Forest Actual vs Predicted Sale Price*: The diagram shows that actual and predicted prices are positively correlated or better still have a direct relationship. This implies that any discrepancies between the prices under measure might imply market inefficiencies or could indicate potential errors in our model.
+
 Moreover, the random forest model sheds light on the significance of various features, thereby amplifying our understanding of how these features influence the sale price.
 
 Plot of Random Forest Feature Importance:
 
 ![Plot of Random Forest Feature Importance](/images/rf_features.png)
+
+*Figure 11 - Random Forest Feature Importance*: This plot provides a visual representation of the significance of different features in the final random forest model. This analysis reveals the importance of each feature in influencing the model's predictions, highlighting a distinctive advantage not present in the neural network model.
 
 ## Discussion
 
