@@ -19,7 +19,7 @@ This project employs the classic Ames, Iowa housing dataset to predict individua
 
 The Ames housing dataset, a comprehensive collection of local government data on housing prices spanning 2006-2010, offers a rich landscape of opportunities for predicting individual residential property prices leveraging machine learning. Curated by Dean De Cock and sourced from the Ames City Assessor's Office in 2011, the dataset comprises 80 variables capturing diverse attributes like size, room count, location, and age (see `/resources/data_description.txt`). 
 
-The primary objective was to come up with a linear regression machine learning model capable of predicting the sale price of residential properties. Employing a dataset of 1460 samples provided by [Kaggle](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques), the project delves into the intricacies of neural network complexity and the robustness of a random forest model. This report encapsulates the methodologies employed and valuable insights gained from this comprehensive predictive modeling exercise.
+The primary objective was to come up with a linear regression machine learning model capable of predicting the residential property sale prices with at least a 0.80 R-squared, ensuring the model explains a substanstial proportion of the variance in price. Employing a dataset of 1460 samples provided by [Kaggle](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques), the project delves into the intricacies of neural network complexity and the robustness of a random forest model. This report encapsulates the methodologies employed and valuable insights gained from this comprehensive predictive modeling exercise.
 
 ## Exploratory Data Analysis
 
@@ -87,7 +87,7 @@ This structured approach allows for an immense range of data preprocessing and f
 
 ## Trial Models
 
-Multiple iterations were conducted, documented in `/trial_models/` and detailed in `House Prices Spreadsheet.xlsx`. Anomalies were identified and removed to enhance model robustness, such as the neighborhood Bluestem, with only 2 values, and properties with more than 4000 square feet of indoor space (see [Exploratory Data Analysis](#exploratory-data-analysis)).
+The initial model successfully met our objective by attaining an R-squared above 0.80. In search of improvement, multiple iterations were conducted, documented in `/trial_models/` and detailed in `House Prices Spreadsheet.xlsx`. Anomalies were identified and removed to enhance model robustness, such as the neighborhood Bluestem, with only 2 values, and properties with more than 4000 square feet of indoor space (see [Exploratory Data Analysis](#exploratory-data-analysis)).
 
 ![BlueSte outlier](/images/BlueSte_after_scaling.png)
 
@@ -156,7 +156,7 @@ Moreover, the random forest model sheds light on the significance of various fea
 
 ## Discussion
 
-This predictive modeling exercise unveiled insights into the intricate relationship between various residential real estate property features and sale prices. Extensive exploratory data analysis was pivotal in shaping the modeling approach, setting a solid foundation by initially identifying potential features, like overall quality, square footage, room count, and property age.
+This predictive modeling exercise unveiled insights into the intricate relationship between various residential real estate property features and sale prices. Extensive exploratory data analysis was pivotal in shaping the modeling approach, setting a solid foundation by initially identifying potential features, like overall quality, square footage, room count, and property age. Accomplishing our target R-squared of 0.80 on the initial attempt underscores the efficacy of exploratory data analysis.
 
 The neural network, implemented with meticulous adjustments to hyperparameters and feature engineering, demonstrated commendable performance. The evaluation metrics, including R-squared, mean squared error, mean absolute error, and mean percentage error, provided a comprehensive understanding of the model's predictive capabilities. Visualization tools, such as scatter plots for actual versus predicted sale prices, training and validation loss plots, and residual analyses, enriched the interpretability of the model's behavior.
 
